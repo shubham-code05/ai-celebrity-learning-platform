@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Stats from "../components/Stats";
@@ -32,17 +31,27 @@ function Home() {
 
         <Hero />
 
+        {/* Selected AI Teacher */}
+
         <SelectedTeacher teacher={teacher} />
+
+        {/* AI Video Section */}
 
         <VideoSection teacher={teacher} />
 
+        {/* Stats */}
+
         <Stats />
+
+        {/* Celebrity Teacher Selection */}
 
         <CelebritySection setTeacher={setTeacher} />
 
-        
+        {/* Courses */}
 
         <Courses />
+
+        {/* Footer */}
 
         <Footer />
 

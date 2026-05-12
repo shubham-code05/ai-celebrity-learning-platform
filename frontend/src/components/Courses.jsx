@@ -62,7 +62,7 @@ function Courses() {
 
               <button className="mt-6 bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 rounded-xl hover:scale-105 transition">
 
-                Enroll Now
+                Choose Course
 
               </button>
 

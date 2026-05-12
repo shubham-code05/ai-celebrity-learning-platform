@@ -23,22 +23,22 @@ function Navbar() {
 
         {/* Desktop Nav Links */}
 
-        <ul className="hidden md:flex gap-10 text-lg font-medium">
+        <ul className="hidden md:flex gap-10 text-lg font-medium items-center">
 
           <li className="hover:text-cyan-400 cursor-pointer transition duration-300">
             <Link to="/">Home</Link>
           </li>
 
           <li className="hover:text-cyan-400 cursor-pointer transition duration-300">
-            <a href="#courses">Courses</a>
+            <Link to="/courses">Courses</Link>
           </li>
 
           <li className="hover:text-cyan-400 cursor-pointer transition duration-300">
-            <a href="#celebrities">Celebrities</a>
+            <Link to="/celebrities">Celebrities</Link>
           </li>
 
           <li className="hover:text-cyan-400 cursor-pointer transition duration-300">
-            <a href="#footer">About</a>
+            <Link to="/about">About</Link>
           </li>
 
         </ul>
@@ -58,7 +58,7 @@ function Navbar() {
         {/* Mobile Menu Button */}
 
         <div
-          className="md:hidden text-3xl cursor-pointer"
+          className="md:hidden text-3xl text-white cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)}
         >
 
@@ -82,36 +82,36 @@ function Navbar() {
             Home
           </Link>
 
-          <a
-            href="#courses"
+          <Link
+            to="/courses"
             className="hover:text-cyan-400 transition"
             onClick={() => setMenuOpen(false)}
           >
             Courses
-          </a>
+          </Link>
 
-          <a
-            href="#celebrities"
+          <Link
+            to="/celebrities"
             className="hover:text-cyan-400 transition"
             onClick={() => setMenuOpen(false)}
           >
             Celebrities
-          </a>
+          </Link>
 
-          <a
-            href="#footer"
+          <Link
+            to="/about"
             className="hover:text-cyan-400 transition"
             onClick={() => setMenuOpen(false)}
           >
             About
-          </a>
+          </Link>
 
           <Link
             to="/login"
             onClick={() => setMenuOpen(false)}
           >
 
-            <button className="bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 rounded-2xl font-semibold">
+            <button className="bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition duration-300">
 
               Login
 
