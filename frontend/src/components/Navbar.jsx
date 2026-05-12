@@ -26,19 +26,19 @@ function Navbar() {
         <ul className="hidden md:flex gap-10 text-lg font-medium">
 
           <li className="hover:text-cyan-400 cursor-pointer transition duration-300">
-            Home
+            <Link to="/">Home</Link>
           </li>
 
           <li className="hover:text-cyan-400 cursor-pointer transition duration-300">
-            Courses
+            <a href="#courses">Courses</a>
           </li>
 
           <li className="hover:text-cyan-400 cursor-pointer transition duration-300">
-            Celebrities
+            <a href="#celebrities">Celebrities</a>
           </li>
 
           <li className="hover:text-cyan-400 cursor-pointer transition duration-300">
-            About
+            <a href="#footer">About</a>
           </li>
 
         </ul>
@@ -82,15 +82,27 @@ function Navbar() {
             Home
           </Link>
 
-          <a href="#" className="hover:text-cyan-400 transition">
+          <a
+            href="#courses"
+            className="hover:text-cyan-400 transition"
+            onClick={() => setMenuOpen(false)}
+          >
             Courses
           </a>
 
-          <a href="#" className="hover:text-cyan-400 transition">
+          <a
+            href="#celebrities"
+            className="hover:text-cyan-400 transition"
+            onClick={() => setMenuOpen(false)}
+          >
             Celebrities
           </a>
 
-          <a href="#" className="hover:text-cyan-400 transition">
+          <a
+            href="#footer"
+            className="hover:text-cyan-400 transition"
+            onClick={() => setMenuOpen(false)}
+          >
             About
           </a>
 
