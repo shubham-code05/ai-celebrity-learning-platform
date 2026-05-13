@@ -7,6 +7,7 @@ import Courses from "../components/Courses";
 import Footer from "../components/Footer";
 import SelectedTeacher from "../components/SelectedTeacher";
 import VideoSection from "../components/VideoSection";
+import Reviews from "../components/Reviews";
 
 function Home() {
 
@@ -54,6 +55,8 @@ function Home() {
         {/* Footer */}
 
         <Footer />
+
+        <Reviews />
 
       </div>
 

@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 
 function About() {
   return (
+
     <div className="min-h-screen bg-[#081028] text-white">
 
       <Navbar />
@@ -22,20 +23,23 @@ function About() {
 
           </h1>
 
-          <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-10">
+          <p className="text-gray-400 text-xl max-w-4xl mx-auto leading-10">
 
-            CelebLearn AI is a futuristic AI-powered learning platform where students
-            can learn coding and technology from AI-generated celebrity mentors.
+            CelebLearn AI is a futuristic AI-powered learning platform
+            where students can learn coding and modern technologies
+            from AI-generated celebrity mentors in an interactive way.
 
           </p>
 
         </div>
 
-        {/* Cards */}
+        {/* Feature Cards */}
 
         <div className="grid md:grid-cols-3 gap-10">
 
-          <div className="bg-[#111827] p-10 rounded-3xl border border-cyan-500/10 hover:border-cyan-400 transition duration-500">
+          {/* Mission */}
+
+          <div className="bg-[#111827] p-10 rounded-3xl border border-cyan-500/10 hover:border-cyan-400 hover:scale-105 transition duration-500 shadow-lg">
 
             <h2 className="text-3xl font-bold mb-5 text-cyan-400">
               Our Mission
@@ -43,14 +47,17 @@ function About() {
 
             <p className="text-gray-300 leading-8">
 
-              Our mission is to make coding education fun, interactive,
-              and futuristic using AI-generated celebrity teachers.
+              Our mission is to make coding education fun,
+              interactive, futuristic and accessible for every student
+              using AI-generated celebrity teachers.
 
             </p>
 
           </div>
 
-          <div className="bg-[#111827] p-10 rounded-3xl border border-cyan-500/10 hover:border-cyan-400 transition duration-500">
+          {/* Smart Learning */}
+
+          <div className="bg-[#111827] p-10 rounded-3xl border border-cyan-500/10 hover:border-cyan-400 hover:scale-105 transition duration-500 shadow-lg">
 
             <h2 className="text-3xl font-bold mb-5 text-cyan-400">
               Smart Learning
@@ -58,14 +65,17 @@ function About() {
 
             <p className="text-gray-300 leading-8">
 
-              Students can learn Python, MERN Stack, JavaScript,
-              CSS animations, and more through immersive AI tutorials.
+              Students can learn Python, Java, MERN Stack,
+              Full Stack Development, AI, Data Structures,
+              CSS Animation and more through immersive tutorials.
 
             </p>
 
           </div>
 
-          <div className="bg-[#111827] p-10 rounded-3xl border border-cyan-500/10 hover:border-cyan-400 transition duration-500">
+          {/* Future Vision */}
+
+          <div className="bg-[#111827] p-10 rounded-3xl border border-cyan-500/10 hover:border-cyan-400 hover:scale-105 transition duration-500 shadow-lg">
 
             <h2 className="text-3xl font-bold mb-5 text-cyan-400">
               Future Vision
@@ -73,8 +83,9 @@ function About() {
 
             <p className="text-gray-300 leading-8">
 
-              We aim to revolutionize online education with AI mentors,
-              smart quizzes, interactive learning, and virtual classrooms.
+              We aim to revolutionize online education with
+              AI mentors, virtual classrooms, smart dashboards,
+              live sessions and personalized learning experiences.
 
             </p>
 
@@ -82,11 +93,129 @@ function About() {
 
         </div>
 
-        {/* Bottom Section */}
+        {/* Technologies Section */}
 
-        <div className="mt-24 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/10 rounded-3xl p-10 text-center">
+        <div className="mt-24">
 
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-5xl font-bold text-center mb-14">
+
+            Technologies{" "}
+
+            <span className="text-cyan-400">
+              Used
+            </span>
+
+          </h2>
+
+          <div className="flex flex-wrap justify-center gap-6">
+
+            <div className="bg-[#111827] px-8 py-4 rounded-2xl border border-cyan-500/20 hover:scale-105 transition">
+              React JS
+            </div>
+
+            <div className="bg-[#111827] px-8 py-4 rounded-2xl border border-cyan-500/20 hover:scale-105 transition">
+              Tailwind CSS
+            </div>
+
+            <div className="bg-[#111827] px-8 py-4 rounded-2xl border border-cyan-500/20 hover:scale-105 transition">
+              JavaScript
+            </div>
+
+            <div className="bg-[#111827] px-8 py-4 rounded-2xl border border-cyan-500/20 hover:scale-105 transition">
+              React Router
+            </div>
+
+            <div className="bg-[#111827] px-8 py-4 rounded-2xl border border-cyan-500/20 hover:scale-105 transition">
+              Vite
+            </div>
+
+            <div className="bg-[#111827] px-8 py-4 rounded-2xl border border-cyan-500/20 hover:scale-105 transition">
+              Node JS
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Team Section */}
+
+        <div className="mt-24">
+
+          <h2 className="text-5xl font-bold text-center mb-14">
+
+            Our{" "}
+
+            <span className="text-cyan-400">
+              Team
+            </span>
+
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-10">
+
+            <div className="bg-[#111827] rounded-3xl p-8 text-center border border-cyan-500/10 hover:border-cyan-400 transition">
+
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+                alt="team"
+                className="w-32 h-32 rounded-full mx-auto object-cover mb-6"
+              />
+
+              <h3 className="text-2xl font-bold">
+                Shubham Prajapati
+              </h3>
+
+              <p className="text-cyan-400 mt-2">
+                Frontend Developer
+              </p>
+
+            </div>
+
+            <div className="bg-[#111827] rounded-3xl p-8 text-center border border-cyan-500/10 hover:border-cyan-400 transition">
+
+              <img
+                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+                alt="team"
+                className="w-32 h-32 rounded-full mx-auto object-cover mb-6"
+              />
+
+              <h3 className="text-2xl font-bold">
+                AI Mentor Team
+              </h3>
+
+              <p className="text-cyan-400 mt-2">
+                AI Integration
+              </p>
+
+            </div>
+
+            <div className="bg-[#111827] rounded-3xl p-8 text-center border border-cyan-500/10 hover:border-cyan-400 transition">
+
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+                alt="team"
+                className="w-32 h-32 rounded-full mx-auto object-cover mb-6"
+              />
+
+              <h3 className="text-2xl font-bold">
+                Design Team
+              </h3>
+
+              <p className="text-cyan-400 mt-2">
+                UI / UX Design
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Bottom Banner */}
+
+        <div className="mt-24 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/10 rounded-3xl p-12 text-center shadow-xl">
+
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
 
             Learn Smarter With{" "}
 
@@ -98,8 +227,9 @@ function About() {
 
           <p className="text-gray-300 text-lg leading-9 max-w-4xl mx-auto">
 
-            CelebLearn AI combines modern technology, artificial intelligence,
-            and engaging learning experiences to help students become industry-ready developers.
+            CelebLearn AI combines Artificial Intelligence,
+            modern technologies and immersive user experiences
+            to help students become industry-ready developers.
 
           </p>
 
@@ -108,6 +238,7 @@ function About() {
       </div>
 
     </div>
+
   );
 }
 

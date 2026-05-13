@@ -1,32 +1,87 @@
 function Stats() {
+
+  const stats = [
+
+    {
+      number: "1M+",
+      title: "Active Students",
+    },
+
+    {
+      number: "100+",
+      title: "AI Celebrity Teachers",
+    },
+
+    {
+      number: "250+",
+      title: "Premium Courses",
+    },
+
+    {
+      number: "24/7",
+      title: "Live Learning Support",
+    },
+
+  ];
+
   return (
-    <section className="px-10 md:px-20 py-20">
+
+    <section className="px-8 md:px-20 py-20">
+
+      {/* Heading */}
+
+      <div className="text-center mb-16">
+
+        <h1 className="text-5xl md:text-6xl font-bold mb-6">
+
+          Platform{" "}
+
+          <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            Statistics
+          </span>
+
+        </h1>
+
+        <p className="text-gray-400 text-lg max-w-3xl mx-auto">
+
+          Thousands of students are learning modern technologies
+          daily with AI-powered celebrity mentors.
+
+        </p>
+
+      </div>
+
+      {/* Stats Cards */}
 
       <div className="grid md:grid-cols-4 gap-8">
 
-        <div className="bg-[#111827] p-8 rounded-3xl text-center border border-gray-800 hover:border-purple-500 transition">
-          <h1 className="text-5xl font-bold text-purple-500">50+</h1>
-          <p className="text-gray-400 mt-3">AI Celebrity Teachers</p>
-        </div>
+        {stats.map((item, index) => (
 
-        <div className="bg-[#111827] p-8 rounded-3xl text-center border border-gray-800 hover:border-purple-500 transition">
-          <h1 className="text-5xl font-bold text-purple-500">100+</h1>
-          <p className="text-gray-400 mt-3">Courses Available</p>
-        </div>
+          <div
+            key={index}
+            className="bg-[#111827] border border-cyan-500/10 rounded-3xl p-10 text-center hover:border-cyan-400 hover:-translate-y-2 transition duration-500 shadow-2xl"
+          >
 
-        <div className="bg-[#111827] p-8 rounded-3xl text-center border border-gray-800 hover:border-purple-500 transition">
-          <h1 className="text-5xl font-bold text-purple-500">1M+</h1>
-          <p className="text-gray-400 mt-3">Students Learning</p>
-        </div>
+            <h2 className="text-5xl font-extrabold mb-4 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
 
-        <div className="bg-[#111827] p-8 rounded-3xl text-center border border-gray-800 hover:border-purple-500 transition">
-          <h1 className="text-5xl font-bold text-purple-500">24/7</h1>
-          <p className="text-gray-400 mt-3">AI Support</p>
-        </div>
+              {item.number}
+
+            </h2>
+
+            <p className="text-gray-300 text-xl font-medium">
+
+              {item.title}
+
+            </p>
+
+          </div>
+
+        ))}
 
       </div>
 
     </section>
+
   );
 }
 

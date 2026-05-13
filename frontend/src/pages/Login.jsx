@@ -1,7 +1,29 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
 
 function Login() {
+
+  const [loading, setLoading] = useState(false);
+
+  const handleLogin = (e) => {
+
+    e.preventDefault();
+
+    setLoading(true);
+
+    setTimeout(() => {
+
+      setLoading(false);
+
+      toast.success("Login Successful 🚀");
+
+    }, 2000);
+
+  };
+
   return (
+
     <div className="min-h-screen bg-[#081028] flex items-center justify-center px-6 relative overflow-hidden">
 
       {/* Background Glow */}
@@ -22,25 +44,32 @@ function Login() {
           Login to CelebLearn AI
         </p>
 
-        <form className="space-y-5">
+        <form
+          className="space-y-5"
+          onSubmit={handleLogin}
+        >
 
           <input
             type="email"
             placeholder="Enter Email"
             className="w-full bg-[#1F2937] text-white px-5 py-4 rounded-xl outline-none border border-transparent focus:border-cyan-400 transition"
+            required
           />
 
           <input
             type="password"
             placeholder="Enter Password"
             className="w-full bg-[#1F2937] text-white px-5 py-4 rounded-xl outline-none border border-transparent focus:border-cyan-400 transition"
+            required
           />
 
           <button
             type="submit"
             className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 py-4 rounded-xl text-lg font-semibold hover:scale-[1.02] transition duration-300 shadow-lg shadow-cyan-500/20"
           >
-            Login
+
+            {loading ? "Loading..." : "Login"}
+
           </button>
 
         </form>
@@ -76,6 +105,7 @@ function Login() {
       </div>
 
     </div>
+
   );
 }
 

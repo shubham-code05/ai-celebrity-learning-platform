@@ -6,7 +6,7 @@ const celebrities = [
     skill: "CSS Masterclass",
     students: "15K Students",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200",
+      "https://www.aljazeera.com/wp-content/uploads/2025/06/AP25154613071841-1749110200.jpg?resize=770%2C513&quality=80",
   },
 
   {
@@ -14,7 +14,7 @@ const celebrities = [
     skill: "MERN Stack",
     students: "20K Students",
     image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200",
+      "https://c.ndtvimg.com/2025-06/q3tab73c_salman-khan_625x300_15_June_25.jpg?im=FeatureCrop,algorithm=dnn,width=773,height=435",
   },
 
   {
@@ -22,7 +22,7 @@ const celebrities = [
     skill: "Python Programming",
     students: "30K Students",
     image:
-      "https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=1200",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRybPhJjzjn-LD3DSUFEPMmLkDchdQYlFmxuOmusJtPp9vviGIrXoRTRzRrhTqKcuv4xPPvEEwCleLIICUOqTovTZnj4ZgsxsTUszg7Cg&s=10",
   },
 
   {
