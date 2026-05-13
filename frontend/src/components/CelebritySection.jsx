@@ -3,21 +3,21 @@ const celebrities = [
     name: "Virat Kohli",
     subject: "CSS Masterclass",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200",
+      "https://4kwallpapers.com/images/wallpapers/virat-kohli-indian-cricketer-2560x2560-2186.jpg",
   },
 
   {
     name: "Salman Khan",
     subject: "MERN Stack",
     image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200",
+      "https://filmfare.wwmindia.com/content/2018/feb/thu_1519451028.jpg",
   },
 
   {
     name: "Sachin Tendulkar",
     subject: "Python Programming",
     image:
-      "https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=1200",
+      "https://img.etimg.com/thumb/width-1200,height-1200,imgsize-70288,resizemode-75,msid-49100674/magazines/panache/sachin-tendulkar-to-tie-up-with-mobile-wallet-firm.jpg",
   },
 ];
 

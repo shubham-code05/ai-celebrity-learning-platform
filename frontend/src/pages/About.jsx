@@ -156,7 +156,7 @@ function About() {
             <div className="bg-[#111827] rounded-3xl p-8 text-center border border-cyan-500/10 hover:border-cyan-400 transition">
 
               <img
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+                src="/images/DSC09213.JPG"
                 alt="team"
                 className="w-32 h-32 rounded-full mx-auto object-cover mb-6"
               />

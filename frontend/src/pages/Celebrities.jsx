@@ -30,7 +30,7 @@ const celebrities = [
     skill: "Java + DSA",
     students: "40K Students",
     image:
-      "https://images.unsplash.com/photo-1504257432389-52343af06ae3?q=80&w=1200",
+      "https://images.fandango.com/ImageRenderer/300/0/redesign/static/img/default_poster.png/0/images/masterrepository/performer%20images/347789/SHAHRUKHKHAN.jpg",
   },
 
   {
@@ -38,7 +38,7 @@ const celebrities = [
     skill: "React JS",
     students: "18K Students",
     image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkPxMGXGkGR4YUEKDL-Z1yo_qghi2EU-oaUDSverJXTcaZ0wsuoTRCbemw4xUvrZUZqjM7ON5AH7VeI-j4-hLDuEGxfI0UXarIIH53Jg&s=10",
   },
 
   {
@@ -46,7 +46,7 @@ const celebrities = [
     skill: "Full Stack Development",
     students: "25K Students",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKxhD1ryKYkIV93FeQkFMUlI-xPsbtbK_L2tdglG8GsV6Ei8C_jiaPSp_RPEra_eUAzJwgAPi8yIQZLAT-vKrNZrzjv94R7rrmAVcZkc8&s=10",
   },
 
   {
@@ -54,7 +54,7 @@ const celebrities = [
     skill: "JavaScript Advanced",
     students: "17K Students",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200",
+      "https://resizing.flixster.com/6C9RppCTKG-CaqyQgLliZrxuV6g=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/170518_v9_bb.jpg",
   },
 
   {
@@ -62,7 +62,7 @@ const celebrities = [
     skill: "DSA Mastery",
     students: "50K Students",
     image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d5/MS_Dhoni_%28Prabhav_%2723_-_RiGI_2023%29.jpg",
   },
 
   {
@@ -70,7 +70,7 @@ const celebrities = [
     skill: "Machine Learning",
     students: "22K Students",
     image:
-      "https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=1200",
+      "https://m.media-amazon.com/images/M/MV5BODI4NDY1NzkyM15BMl5BanBnXkFtZTgwNzM3MDM0OTE@._V1_.jpg",
   },
 
   {
@@ -78,7 +78,7 @@ const celebrities = [
     skill: "Artificial Intelligence",
     students: "19K Students",
     image:
-      "https://images.unsplash.com/photo-1504257432389-52343af06ae3?q=80&w=1200",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQPpEkKVNSaOmVhFQwRJEb1QZmLs825AuwT9ADeBk5bREM3hBTJAudKm_f5TiTUldHpYZiEiRT0w6JNEv5Bwt64zryQ4b_uZn7qCwIw&s=10",
   },
 
   {
@@ -86,7 +86,7 @@ const celebrities = [
     skill: "Cyber Security",
     students: "14K Students",
     image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQXuQ6cWAMo1sR-en4Ye-VN8_sOcaOP01NdPspzypJjGmkrJow5bBVbda975eA7w0MPYXxz5bJMqaPpzGRj_xvtGDQysaTln30AxBPtg&s=10",
   },
 
   {
@@ -94,7 +94,7 @@ const celebrities = [
     skill: "Cloud Computing",
     students: "16K Students",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-owIHxN6dLQqQBIYLryr5rEWbJjROm7xpOmz-2ZOL299TvvkCfQD_7yEiWh0mJnwqxBm1yHSF0azCayOpo2n8dzZO18OIEGBsUcglvQ&s=10",
   },
 
 ];

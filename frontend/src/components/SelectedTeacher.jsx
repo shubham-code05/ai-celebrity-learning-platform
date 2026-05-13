@@ -21,7 +21,7 @@ function SelectedTeacher() {
           <div>
 
             <img
-              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200"
+              src="/images/DSC09213.JPG"
               alt="teacher"
               className="rounded-3xl w-full h-[400px] object-cover border border-cyan-400"
             />
