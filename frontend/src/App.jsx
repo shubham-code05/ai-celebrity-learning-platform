@@ -6,6 +6,7 @@ import Signup from "./pages/Signup";
 import Courses from "./pages/Courses";
 import Celebrities from "./pages/Celebrities";
 import About from "./pages/About";
+import Admin from "./pages/Admin";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
 
       {/* About Page */}
       <Route path="/about" element={<About />} />
+
+      {/* Admin Page */}
+      <Route path="/admin" element={<Admin />} />
 
     </Routes>
   );

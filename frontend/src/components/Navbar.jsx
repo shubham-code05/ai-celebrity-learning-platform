@@ -41,6 +41,10 @@ function Navbar() {
             <Link to="/about">About</Link>
           </li>
 
+          <li className="hover:text-cyan-400 cursor-pointer transition duration-300">
+            <Link to="/admin">Admin</Link>
+          </li>
+
         </ul>
 
         {/* Desktop Login Button */}
@@ -104,6 +108,14 @@ function Navbar() {
             onClick={() => setMenuOpen(false)}
           >
             About
+          </Link>
+
+          <Link
+            to="/admin"
+            className="hover:text-cyan-400 transition"
+            onClick={() => setMenuOpen(false)}
+          >
+            Admin
           </Link>
 
           <Link
