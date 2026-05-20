@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Admin from "./pages/Admin";
 import ForgotPassword from "./pages/ForgotPassword";
 import OtpVerification from "./pages/OtpVerification";
+import Analytics from "./pages/Analytics";
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
 
       {/* Otp Verification Page */}
       <Route path="/otp-verification" element={<OtpVerification />} />
+
+      {/* Analytics Page */}
+      <Route path="/analytics" element={<Analytics />} />
 
     </Routes>
   );

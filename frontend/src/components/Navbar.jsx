@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -7,10 +7,24 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
 
+  useEffect(() => {
+
+    if (darkMode) {
+
+      document.documentElement.classList.add("dark");
+
+    } else {
+
+      document.documentElement.classList.remove("dark");
+
+    }
+
+  }, [darkMode]);
+
   return (
 
     <nav
-      className={`sticky top-0 z-50 backdrop-blur-xl border-b border-white/10 ${
+      className={`sticky top-0 z-50 backdrop-blur-xl border-b border-white/10 transition duration-300 ${
         darkMode
           ? "bg-[#081028]/70 text-white"
           : "bg-white/80 text-black"
@@ -63,7 +77,11 @@ function Navbar() {
 
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="bg-[#111827] border border-cyan-500/20 p-3 rounded-2xl hover:border-cyan-400 transition shadow-lg"
+            className={`p-3 rounded-2xl border transition duration-300 shadow-lg ${
+              darkMode
+                ? "bg-[#111827] border-cyan-500/20 hover:border-cyan-400 text-white"
+                : "bg-gray-100 border-gray-300 hover:border-cyan-400 text-black"
+            }`}
           >
 
             {darkMode ? "🌙" : "☀️"}
@@ -102,7 +120,7 @@ function Navbar() {
       {menuOpen && (
 
         <div
-          className={`md:hidden flex flex-col items-center gap-8 py-8 border-t border-white/10 text-lg font-medium ${
+          className={`md:hidden flex flex-col items-center gap-8 py-8 border-t border-white/10 text-lg font-medium transition duration-300 ${
             darkMode
               ? "bg-[#081028] text-white"
               : "bg-white text-black"
@@ -153,7 +171,11 @@ function Navbar() {
 
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="bg-[#111827] border border-cyan-500/20 p-3 rounded-2xl hover:border-cyan-400 transition shadow-lg"
+            className={`p-3 rounded-2xl border transition duration-300 shadow-lg ${
+              darkMode
+                ? "bg-[#111827] border-cyan-500/20 hover:border-cyan-400 text-white"
+                : "bg-gray-100 border-gray-300 hover:border-cyan-400 text-black"
+            }`}
           >
 
             {darkMode ? "🌙" : "☀️"}

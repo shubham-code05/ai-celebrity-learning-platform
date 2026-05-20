@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { Bell } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import {
   BarChart,
@@ -17,6 +18,7 @@ import {
 function Admin() {
 
   const [showModal, setShowModal] = useState(false);
+  const [showNotifications, setShowNotifications] = useState(false);
 
   const stats = [
 
@@ -132,9 +134,15 @@ function Admin() {
               AI Teachers
             </button>
 
-            <button className="text-left hover:text-cyan-400 transition">
-              Analytics
-            </button>
+            <Link to="/analytics">
+
+              <button className="text-left hover:text-cyan-400 transition">
+
+                Analytics
+
+              </button>
+
+            </Link>
 
             <button className="text-left hover:text-cyan-400 transition">
               Settings
@@ -176,7 +184,10 @@ function Admin() {
 
             <div className="relative mt-8 md:mt-0">
 
-              <button className="bg-[#111827] p-4 rounded-2xl border border-cyan-500/20 hover:border-cyan-400 transition shadow-lg">
+              <button
+                onClick={() => setShowNotifications(!showNotifications)}
+                className="bg-[#111827] p-4 rounded-2xl border border-cyan-500/20 hover:border-cyan-400 transition shadow-lg"
+              >
 
                 <Bell size={28} className="text-cyan-400" />
 
@@ -189,6 +200,71 @@ function Admin() {
                 3
 
               </span>
+
+              {/* Notification Dropdown */}
+
+              {showNotifications && (
+
+                <div className="absolute right-0 mt-4 w-[350px] bg-[#111827] border border-cyan-500/20 rounded-3xl shadow-2xl p-6 z-50">
+
+                  <div className="flex items-center justify-between mb-6">
+
+                    <h2 className="text-2xl font-bold">
+                      Notifications
+                    </h2>
+
+                    <button
+                      onClick={() => setShowNotifications(false)}
+                      className="text-gray-400 hover:text-white"
+                    >
+                      ✕
+                    </button>
+
+                  </div>
+
+                  <div className="flex flex-col gap-4">
+
+                    <div className="bg-[#0f172a] p-4 rounded-2xl border border-cyan-500/10">
+
+                      <p className="font-semibold mb-1">
+                        📚 New Course Added
+                      </p>
+
+                      <p className="text-gray-400 text-sm">
+                        AI Mastery course was added today.
+                      </p>
+
+                    </div>
+
+                    <div className="bg-[#0f172a] p-4 rounded-2xl border border-cyan-500/10">
+
+                      <p className="font-semibold mb-1">
+                        👨‍🎓 New Student Registered
+                      </p>
+
+                      <p className="text-gray-400 text-sm">
+                        120 new students joined this week.
+                      </p>
+
+                    </div>
+
+                    <div className="bg-[#0f172a] p-4 rounded-2xl border border-cyan-500/10">
+
+                      <p className="font-semibold mb-1">
+                        💰 Revenue Increased
+                      </p>
+
+                      <p className="text-gray-400 text-sm">
+                        Revenue increased by 18% this month.
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              )}
 
             </div>
 
