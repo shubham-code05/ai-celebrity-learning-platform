@@ -7,6 +7,8 @@ import Courses from "./pages/Courses";
 import Celebrities from "./pages/Celebrities";
 import About from "./pages/About";
 import Admin from "./pages/Admin";
+import ForgotPassword from "./pages/ForgotPassword";
+import OtpVerification from "./pages/OtpVerification";
 
 function App() {
   return (
@@ -32,6 +34,12 @@ function App() {
 
       {/* Admin Page */}
       <Route path="/admin" element={<Admin />} />
+
+      {/* Forgot Password Page */}
+      <Route path="/forgot-password" element={<ForgotPassword />} />
+
+      {/* Otp Verification Page */}
+      <Route path="/otp-verification" element={<OtpVerification />} />
 
     </Routes>
   );

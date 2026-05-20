@@ -21,7 +21,7 @@ function SelectedTeacher() {
           <div>
 
             <img
-              src="/images/DSC09213.JPG"
+              src="https://4kwallpapers.com/images/wallpapers/virat-kohli-indian-cricketer-2560x2560-2186.jpg"
               alt="teacher"
               className="rounded-3xl w-full h-[400px] object-cover border border-cyan-400"
             />

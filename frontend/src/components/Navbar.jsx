@@ -5,9 +5,17 @@ import { FaBars, FaTimes } from "react-icons/fa";
 function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-xl bg-[#081028]/70 border-b border-white/10">
+
+    <nav
+      className={`sticky top-0 z-50 backdrop-blur-xl border-b border-white/10 ${
+        darkMode
+          ? "bg-[#081028]/70 text-white"
+          : "bg-white/80 text-black"
+      }`}
+    >
 
       <div className="flex items-center justify-between px-8 md:px-16 py-5">
 
@@ -47,22 +55,39 @@ function Navbar() {
 
         </ul>
 
-        {/* Desktop Login Button */}
+        {/* Right Side */}
 
-        <Link to="/login">
+        <div className="hidden md:flex items-center gap-5">
 
-          <button className="hidden md:block bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition duration-300 shadow-lg shadow-cyan-500/20">
+          {/* Theme Toggle */}
 
-            Login
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="bg-[#111827] border border-cyan-500/20 p-3 rounded-2xl hover:border-cyan-400 transition shadow-lg"
+          >
+
+            {darkMode ? "🌙" : "☀️"}
 
           </button>
 
-        </Link>
+          {/* Login Button */}
+
+          <Link to="/login">
+
+            <button className="flex items-center gap-3 bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 rounded-2xl font-semibold text-white hover:scale-105 transition duration-300 shadow-lg shadow-cyan-500/30 border border-cyan-400/20 backdrop-blur-xl">
+
+              ➜ Login
+
+            </button>
+
+          </Link>
+
+        </div>
 
         {/* Mobile Menu Button */}
 
         <div
-          className="md:hidden text-3xl text-white cursor-pointer"
+          className="md:hidden text-3xl cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)}
         >
 
@@ -76,7 +101,13 @@ function Navbar() {
 
       {menuOpen && (
 
-        <div className="md:hidden flex flex-col items-center gap-8 py-8 bg-[#081028] border-t border-white/10 text-lg font-medium">
+        <div
+          className={`md:hidden flex flex-col items-center gap-8 py-8 border-t border-white/10 text-lg font-medium ${
+            darkMode
+              ? "bg-[#081028] text-white"
+              : "bg-white text-black"
+          }`}
+        >
 
           <Link
             to="/"
@@ -118,12 +149,25 @@ function Navbar() {
             Admin
           </Link>
 
+          {/* Mobile Theme Toggle */}
+
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="bg-[#111827] border border-cyan-500/20 p-3 rounded-2xl hover:border-cyan-400 transition shadow-lg"
+          >
+
+            {darkMode ? "🌙" : "☀️"}
+
+          </button>
+
+          {/* Mobile Login Button */}
+
           <Link
             to="/login"
             onClick={() => setMenuOpen(false)}
           >
 
-            <button className="bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition duration-300">
+            <button className="bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition duration-300 text-white">
 
               Login
 

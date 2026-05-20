@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
+import { Bell } from "lucide-react";
 
 import {
   BarChart,
@@ -149,23 +150,47 @@ function Admin() {
 
           {/* Heading */}
 
-          <div className="mb-14">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-14">
 
-            <h1 className="text-5xl font-bold mb-4">
+            <div>
 
-              Admin{" "}
+              <h1 className="text-5xl font-bold mb-4">
 
-              <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                Dashboard
+                Admin{" "}
+
+                <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                  Dashboard
+                </span>
+
+              </h1>
+
+              <p className="text-gray-400 text-lg">
+
+                Manage platform courses, students and AI celebrity teachers.
+
+              </p>
+
+            </div>
+
+            {/* Notification Bell */}
+
+            <div className="relative mt-8 md:mt-0">
+
+              <button className="bg-[#111827] p-4 rounded-2xl border border-cyan-500/20 hover:border-cyan-400 transition shadow-lg">
+
+                <Bell size={28} className="text-cyan-400" />
+
+              </button>
+
+              {/* Badge */}
+
+              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-6 h-6 flex items-center justify-center rounded-full">
+
+                3
+
               </span>
 
-            </h1>
-
-            <p className="text-gray-400 text-lg">
-
-              Manage platform courses, students and AI celebrity teachers.
-
-            </p>
+            </div>
 
           </div>
 
@@ -177,7 +202,7 @@ function Admin() {
 
               <div
                 key={index}
-                className="bg-[#111827] border border-cyan-500/10 rounded-3xl p-8 hover:border-cyan-400 transition duration-500 shadow-2xl"
+                className="bg-[#111827] border border-cyan-500/10 rounded-3xl p-8 hover:border-cyan-400 hover:-translate-y-2 transition duration-500 shadow-2xl"
               >
 
                 <h2 className="text-gray-400 text-lg mb-4">
@@ -191,6 +216,100 @@ function Admin() {
               </div>
 
             ))}
+
+          </div>
+
+          {/* Quick Actions */}
+
+          <div className="mb-16">
+
+            <div className="flex items-center justify-between mb-8">
+
+              <h2 className="text-3xl font-bold">
+                Quick Actions
+              </h2>
+
+              <p className="text-gray-400">
+                Manage your platform quickly 🚀
+              </p>
+
+            </div>
+
+            <div className="grid md:grid-cols-4 gap-6">
+
+              {/* Add Course */}
+
+              <button className="bg-gradient-to-r from-cyan-500 to-blue-600 p-6 rounded-3xl text-left hover:scale-105 transition duration-300 shadow-lg shadow-cyan-500/20">
+
+                <div className="text-5xl mb-4">
+                  📚
+                </div>
+
+                <h3 className="text-2xl font-bold mb-2">
+                  Add Course
+                </h3>
+
+                <p className="text-white/80">
+                  Create new AI learning courses.
+                </p>
+
+              </button>
+
+              {/* Add Student */}
+
+              <button className="bg-[#111827] border border-cyan-500/20 p-6 rounded-3xl text-left hover:border-cyan-400 hover:-translate-y-2 transition duration-300 shadow-2xl">
+
+                <div className="text-5xl mb-4">
+                  👨‍🎓
+                </div>
+
+                <h3 className="text-2xl font-bold mb-2">
+                  Add Student
+                </h3>
+
+                <p className="text-gray-400">
+                  Manage platform students.
+                </p>
+
+              </button>
+
+              {/* Notifications */}
+
+              <button className="bg-[#111827] border border-cyan-500/20 p-6 rounded-3xl text-left hover:border-cyan-400 hover:-translate-y-2 transition duration-300 shadow-2xl">
+
+                <div className="text-5xl mb-4">
+                  🔔
+                </div>
+
+                <h3 className="text-2xl font-bold mb-2">
+                  Notifications
+                </h3>
+
+                <p className="text-gray-400">
+                  Send updates to users.
+                </p>
+
+              </button>
+
+              {/* Reports */}
+
+              <button className="bg-[#111827] border border-cyan-500/20 p-6 rounded-3xl text-left hover:border-cyan-400 hover:-translate-y-2 transition duration-300 shadow-2xl">
+
+                <div className="text-5xl mb-4">
+                  📊
+                </div>
+
+                <h3 className="text-2xl font-bold mb-2">
+                  Reports
+                </h3>
+
+                <p className="text-gray-400">
+                  Generate analytics reports.
+                </p>
+
+              </button>
+
+            </div>
 
           </div>
 
